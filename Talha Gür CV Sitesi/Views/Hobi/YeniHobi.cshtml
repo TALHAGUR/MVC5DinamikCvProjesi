@@ -1,0 +1,19 @@
+﻿@model TgCv.Models.Entity.TblHobilerim
+
+@{
+    ViewBag.Title = "YeniHobi";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<br />
+<h4>Yeni Hobi Ekleme Sayfası</h4>
+<br />
+<form method="post">
+    @Html.Label("Hobi Açıklaması")
+    @Html.TextBoxFor(x => x.Aciklama1, new { @class = "form-control" })
+    <br />
+    <br />
+    <button class="btn btn-primary">Kaydet</button>
+</form>
+
